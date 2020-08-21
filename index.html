@@ -1,0 +1,597 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Talento Inclusivo</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+        <style>
+            :root{
+                --color-primary:#ff0709;
+            }
+        </style>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://www.tgweb.spyrohost.com/css/style.css">
+        <link rel="stylesheet" href="/assets/css/commons.css">
+        <link rel="stylesheet" href="/assets/css/index.css">
+            </head>
+    <body>
+        <a href="javascript:" id="return-to-top"><i class="fas fa-chevron-up"></i></a>
+        <header>
+  <div class="container-fluid">
+    <div class="row fd-fluid">
+      <div class="col-md-3 col-sm-3 col-xs-3">
+        <div class="logo slide"> <a href="/es/"> <img src="https://www.tgweb.spyrohost.com/img/logo.png" alt="Turismo en Grupo"> </a> </div>
+      </div>
+      <div class="col-md-9 col-sm-9 col-xs-9">
+        <nav class="navbar pull-right">
+          <div class="collapse navbar-collapse hidden-xs hidden-sm">
+            <ul class="nav navbar-nav">
+              <li class="active"><a class="pop-up" href="es/mapa"><i class="fas fa-map-marker-alt"></i> Mapa</a></li>
+              <li class="active"><a href="es/user/login" class="open-login pop-up"><i class="fas fa-user"></i> Iniciar
+                  sesión</a></li>
+              <li class="dropdown"> <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown"
+                  role="button" aria-haspopup="true" aria-expanded="false">Ayuda <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="es/contact-us">Contáctanos</a></li>
+                  <li><a href="es/visit-us">Visitanos</a></li>
+                  <li><a href="es/feedback">Feedback</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"> <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown"
+                  role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-globe"></i> Idioma (Español)
+                  <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li class=""><a href="en/">Inglés</a></li>
+                  <li class="active"><a href="es/">Español</a></li>
+                  <!--<li class="" ><a href="pt/">Portugués</a></li>-->
+                </ul>
+              </li>
+              <li><a href="javascript:void(0)" class="p-right-0"><i class="fas fa-money-bill-alt"></i> Moneda
+                  (Dolar)</a></li>
+            </ul>
+          </div>
+          <div class="nav-mobil visible-xs visible-sm">
+            <div class="menu-opcional">
+              <ul>
+                <li style="position: relative;"><i class="fas fa-search"></i></li>
+                <li>
+                  <a href="javascript:void(0)" id="menu-toggle-wrapper">
+                    <div id="menu-toggle"></div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>        
+        <div class="row hidden-xs hidden-sm">
+          <div class="col-md-12 carrito">
+            <div class="col-xs-12 col-sm-8 col-md-6 content-search carrito">
+              <div class="input-group input-group-lg hidden-xs style-search d-flex">
+                                  <div class="input-group-btn">
+                                
+                    <a href="https://www.tgweb.spyrohost.com/es/cart/" class="btn btn-default btn-lg btn-carrito margin-left-15">
+                      <i class="fas fa-shopping-cart"></i> Ver carrito <span id="cart_total_productos">0</span>
+                    </a> 
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="box box-bottom hidden-sm hidden-xs hidden"></div>
+</header>        <section class="banner">
+	<div class="container-fluid">
+	  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+	    <ol class="carousel-indicators">
+	      	      	<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+	      	      	<li data-target="#myCarousel" data-slide-to="1" class=""></li>
+	      	      	<li data-target="#myCarousel" data-slide-to="2" class=""></li>
+	      	    </ol>
+	    <div class="carousel-inner">
+	    	<div class="finding">
+	          <div class="col-xs-12 col-sm-8 col-md-6 content-search">
+	            <div class="input-group input-group-lg style-search">
+	              <div class="input-group-btn"> <button type="button" class="btn btn-default b-left"><i
+	                    class="fas fa-map-marker-alt"></i></button> </div>
+	              <div class="search-section"> <input class="form-control input-lg i-left search-destino" name="destino"
+	                  type="text" placeholder="¿A donde quieres ir?" autocomplete="off">
+	                <ul class="filter-search ft-destino"></ul>
+	              </div>
+	              <div class="input-group-btn">
+	              	<button type="button" class="btn btn-default s-text send-search">Buscar</button>
+	              </div>
+	            </div>
+	          </div>
+	        </div>
+					      <div class="item active">
+		        <img src="https://www.tgweb.spyrohost.com/slider/79cfc2cfcc862d3c26486af26513077b.jpg" alt="Los Angeles" style="width:100%;">
+		        <div class="carousel-caption">
+		          <h3>Los Angeles</h3>
+		          <p>LA is always so much fun!</p>
+		        </div>
+		      </div>
+					      <div class="item ">
+		        <img src="https://www.tgweb.spyrohost.com/slider/077e6173513fe0ab5ee6442ff7a092c9.jpg" alt="Los Angeles" style="width:100%;">
+		        <div class="carousel-caption">
+		          <h3>Los Angeles</h3>
+		          <p>LA is always so much fun!</p>
+		        </div>
+		      </div>
+					      <div class="item ">
+		        <img src="https://www.tgweb.spyrohost.com/slider/04db2b6d1f41cbe5547249933a707d1c.jpg" alt="Los Angeles" style="width:100%;">
+		        <div class="carousel-caption">
+		          <h3>Los Angeles</h3>
+		          <p>LA is always so much fun!</p>
+		        </div>
+		      </div>
+				    </div>
+	    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+	      <span class="glyphicon glyphicon-chevron-left"></span>
+	      <span class="sr-only">Previous</span>
+	    </a>
+	    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+	      <span class="glyphicon glyphicon-chevron-right"></span>
+	      <span class="sr-only">Next</span>
+	    </a>
+	  </div>
+	</div>
+</section><div class="paquetes fd-fluid">
+	<br>
+	<div class="container-fluid">
+		<div class="titulo">
+			<h3>LO MAS <span class="azul">VENDIDO</span></h3>
+		</div>
+		<div class="row">
+	        				<div class="col-md-3 col-sm-6 col-xs-12">
+  <div class="panel panel-default my_panel">
+    <div class="panel-body">
+      <img src="https://www.tgweb.spyrohost.com/paquetes/152752053914_small.jpg" alt="" class="img-responsive center-block" />
+    </div>
+    <div class="panel-footer">
+      <h4><strong>Machu Picchu</strong></h4>
+      <small>
+        <span><i class="fas fa-star"></i> 4.1</span>
+        <span>(120 Opiniones)</span>
+      </small>
+      <div>Conoce las imponentes construcciones Incas en Ollantaytambo, Pikimachay, Kenko y Sacsayhuaman</div>
+      <div class="d-flex justify-content-between precio aling-items-strech">
+        <div class="d-flex flex-direction-column justify-content-arround">
+          <span><i class="fas fa-map-marker-alt"></i> Recojo en Plaza de Armas de Cusco</span>
+          <span><i class="far fa-clock"></i> 5-6 Horas</span>
+        </div>
+        <div class="d-flex flex-direction-column">
+          <span>Desde USD</span>
+          <span class="price">200</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>	        				<div class="col-md-3 col-sm-6 col-xs-12">
+  <div class="panel panel-default my_panel">
+    <div class="panel-body">
+      <img src="https://www.tgweb.spyrohost.com/paquetes/152752053914_small.jpg" alt="" class="img-responsive center-block" />
+    </div>
+    <div class="panel-footer">
+      <h4><strong>Machu Picchu</strong></h4>
+      <small>
+        <span><i class="fas fa-star"></i> 4.1</span>
+        <span>(120 Opiniones)</span>
+      </small>
+      <div>Conoce las imponentes construcciones Incas en Ollantaytambo, Pikimachay, Kenko y Sacsayhuaman</div>
+      <div class="d-flex justify-content-between precio aling-items-strech">
+        <div class="d-flex flex-direction-column justify-content-arround">
+          <span><i class="fas fa-map-marker-alt"></i> Recojo en Plaza de Armas de Cusco</span>
+          <span><i class="far fa-clock"></i> 5-6 Horas</span>
+        </div>
+        <div class="d-flex flex-direction-column">
+          <span>Desde USD</span>
+          <span class="price">200</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>	        				<div class="col-md-3 col-sm-6 col-xs-12">
+  <div class="panel panel-default my_panel">
+    <div class="panel-body">
+      <img src="https://www.tgweb.spyrohost.com/paquetes/152752053914_small.jpg" alt="" class="img-responsive center-block" />
+    </div>
+    <div class="panel-footer">
+      <h4><strong>Machu Picchu</strong></h4>
+      <small>
+        <span><i class="fas fa-star"></i> 4.1</span>
+        <span>(120 Opiniones)</span>
+      </small>
+      <div>Conoce las imponentes construcciones Incas en Ollantaytambo, Pikimachay, Kenko y Sacsayhuaman</div>
+      <div class="d-flex justify-content-between precio aling-items-strech">
+        <div class="d-flex flex-direction-column justify-content-arround">
+          <span><i class="fas fa-map-marker-alt"></i> Recojo en Plaza de Armas de Cusco</span>
+          <span><i class="far fa-clock"></i> 5-6 Horas</span>
+        </div>
+        <div class="d-flex flex-direction-column">
+          <span>Desde USD</span>
+          <span class="price">200</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>	        				<div class="col-md-3 col-sm-6 col-xs-12">
+  <div class="panel panel-default my_panel">
+    <div class="panel-body">
+      <img src="https://www.tgweb.spyrohost.com/paquetes/152752053914_small.jpg" alt="" class="img-responsive center-block" />
+    </div>
+    <div class="panel-footer">
+      <h4><strong>Machu Picchu</strong></h4>
+      <small>
+        <span><i class="fas fa-star"></i> 4.1</span>
+        <span>(120 Opiniones)</span>
+      </small>
+      <div>Conoce las imponentes construcciones Incas en Ollantaytambo, Pikimachay, Kenko y Sacsayhuaman</div>
+      <div class="d-flex justify-content-between precio aling-items-strech">
+        <div class="d-flex flex-direction-column justify-content-arround">
+          <span><i class="fas fa-map-marker-alt"></i> Recojo en Plaza de Armas de Cusco</span>
+          <span><i class="far fa-clock"></i> 5-6 Horas</span>
+        </div>
+        <div class="d-flex flex-direction-column">
+          <span>Desde USD</span>
+          <span class="price">200</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>	        	    </div>
+	</div>
+</div>
+
+<div class="separate">
+	<hr size="2">
+	<div class="d-flex justify-content-center"><a href="#!"><h4><b>Ver Más <i class="fas fa-chevron-down azul"></i></b></h4></a></div>
+</div><div class="paquetes fd-fluid">
+	<br>
+	<div class="container-fluid">
+		<div class="titulo">
+			<h3>CONOCE EL <span class="azul">PERÚ</span></h3>
+		</div>
+		<div class="row">
+	        				<div class="col-md-3 col-sm-6 col-xs-12">
+  <div class="panel panel-default my_panel">
+    <div class="panel-body">
+      <img src="https://www.tgweb.spyrohost.com/paquetes/152752053914_small.jpg" alt="" class="img-responsive center-block" />
+    </div>
+    <div class="panel-footer">
+      <h4><strong>Machu Picchu</strong></h4>
+      <small>
+        <span><i class="fas fa-star"></i> 4.1</span>
+        <span>(120 Opiniones)</span>
+      </small>
+      <div>Conoce las imponentes construcciones Incas en Ollantaytambo, Pikimachay, Kenko y Sacsayhuaman</div>
+      <div class="d-flex justify-content-between precio aling-items-strech">
+        <div class="d-flex flex-direction-column justify-content-arround">
+          <span><i class="fas fa-map-marker-alt"></i> Recojo en Plaza de Armas de Cusco</span>
+          <span><i class="far fa-clock"></i> 5-6 Horas</span>
+        </div>
+        <div class="d-flex flex-direction-column">
+          <span>Desde USD</span>
+          <span class="price">200</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>	        				<div class="col-md-3 col-sm-6 col-xs-12">
+  <div class="panel panel-default my_panel">
+    <div class="panel-body">
+      <img src="https://www.tgweb.spyrohost.com/paquetes/152752053914_small.jpg" alt="" class="img-responsive center-block" />
+    </div>
+    <div class="panel-footer">
+      <h4><strong>Machu Picchu</strong></h4>
+      <small>
+        <span><i class="fas fa-star"></i> 4.1</span>
+        <span>(120 Opiniones)</span>
+      </small>
+      <div>Conoce las imponentes construcciones Incas en Ollantaytambo, Pikimachay, Kenko y Sacsayhuaman</div>
+      <div class="d-flex justify-content-between precio aling-items-strech">
+        <div class="d-flex flex-direction-column justify-content-arround">
+          <span><i class="fas fa-map-marker-alt"></i> Recojo en Plaza de Armas de Cusco</span>
+          <span><i class="far fa-clock"></i> 5-6 Horas</span>
+        </div>
+        <div class="d-flex flex-direction-column">
+          <span>Desde USD</span>
+          <span class="price">200</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>	        				<div class="col-md-3 col-sm-6 col-xs-12">
+  <div class="panel panel-default my_panel">
+    <div class="panel-body">
+      <img src="https://www.tgweb.spyrohost.com/paquetes/152752053914_small.jpg" alt="" class="img-responsive center-block" />
+    </div>
+    <div class="panel-footer">
+      <h4><strong>Machu Picchu</strong></h4>
+      <small>
+        <span><i class="fas fa-star"></i> 4.1</span>
+        <span>(120 Opiniones)</span>
+      </small>
+      <div>Conoce las imponentes construcciones Incas en Ollantaytambo, Pikimachay, Kenko y Sacsayhuaman</div>
+      <div class="d-flex justify-content-between precio aling-items-strech">
+        <div class="d-flex flex-direction-column justify-content-arround">
+          <span><i class="fas fa-map-marker-alt"></i> Recojo en Plaza de Armas de Cusco</span>
+          <span><i class="far fa-clock"></i> 5-6 Horas</span>
+        </div>
+        <div class="d-flex flex-direction-column">
+          <span>Desde USD</span>
+          <span class="price">200</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>	        				<div class="col-md-3 col-sm-6 col-xs-12">
+  <div class="panel panel-default my_panel">
+    <div class="panel-body">
+      <img src="https://www.tgweb.spyrohost.com/paquetes/152752053914_small.jpg" alt="" class="img-responsive center-block" />
+    </div>
+    <div class="panel-footer">
+      <h4><strong>Machu Picchu</strong></h4>
+      <small>
+        <span><i class="fas fa-star"></i> 4.1</span>
+        <span>(120 Opiniones)</span>
+      </small>
+      <div>Conoce las imponentes construcciones Incas en Ollantaytambo, Pikimachay, Kenko y Sacsayhuaman</div>
+      <div class="d-flex justify-content-between precio aling-items-strech">
+        <div class="d-flex flex-direction-column justify-content-arround">
+          <span><i class="fas fa-map-marker-alt"></i> Recojo en Plaza de Armas de Cusco</span>
+          <span><i class="far fa-clock"></i> 5-6 Horas</span>
+        </div>
+        <div class="d-flex flex-direction-column">
+          <span>Desde USD</span>
+          <span class="price">200</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>	        	    </div>
+	</div>
+</div>
+
+<div class="separate">
+	<hr size="2">
+	<div class="d-flex justify-content-center"><a href="#!"><h4><b>Ver Más <i class="fas fa-chevron-down azul"></i></b></h4></a></div>
+</div><div class="paquetes fd-fluid">
+	<br>
+	<div class="container-fluid">
+		<div class="titulo">
+			<h3>DESTINOS MAS <span class="azul">VISITADOS</span></h3>
+		</div>
+		<div class="row">
+	        				<div class="col-md-3 col-sm-6 col-xs-12">
+  <div class="panel panel-default my_panel my_panel-card">
+    <div class="panel-body">
+      <div class="over-card">CUSCO</div>
+      <img src="https://www.tgweb.spyrohost.com/paquetes/152752053914_small.jpg" alt="" class="img-responsive center-block" />
+    </div>
+    <div class="panel-footer">
+      <h5><strong>14 Paquetes y Excursiones en Cusco</strong></h5>      
+    </div>
+  </div>
+</div>	        				<div class="col-md-3 col-sm-6 col-xs-12">
+  <div class="panel panel-default my_panel my_panel-card">
+    <div class="panel-body">
+      <div class="over-card">CUSCO</div>
+      <img src="https://www.tgweb.spyrohost.com/paquetes/152752053914_small.jpg" alt="" class="img-responsive center-block" />
+    </div>
+    <div class="panel-footer">
+      <h5><strong>14 Paquetes y Excursiones en Cusco</strong></h5>      
+    </div>
+  </div>
+</div>	        				<div class="col-md-3 col-sm-6 col-xs-12">
+  <div class="panel panel-default my_panel my_panel-card">
+    <div class="panel-body">
+      <div class="over-card">CUSCO</div>
+      <img src="https://www.tgweb.spyrohost.com/paquetes/152752053914_small.jpg" alt="" class="img-responsive center-block" />
+    </div>
+    <div class="panel-footer">
+      <h5><strong>14 Paquetes y Excursiones en Cusco</strong></h5>      
+    </div>
+  </div>
+</div>	        				<div class="col-md-3 col-sm-6 col-xs-12">
+  <div class="panel panel-default my_panel my_panel-card">
+    <div class="panel-body">
+      <div class="over-card">CUSCO</div>
+      <img src="https://www.tgweb.spyrohost.com/paquetes/152752053914_small.jpg" alt="" class="img-responsive center-block" />
+    </div>
+    <div class="panel-footer">
+      <h5><strong>14 Paquetes y Excursiones en Cusco</strong></h5>      
+    </div>
+  </div>
+</div>	        	    </div>
+	</div>
+</div>
+
+<div class="separate">
+	<hr size="2">
+	<div class="d-flex justify-content-center"><a href="#!"><h4><b>Ver Más <i class="fas fa-chevron-down azul"></i></b></h4></a></div>
+</div><div class="paquetes fd-fluid">
+	<br>
+	<div class="container-fluid">
+		<div class="titulo">
+			<h3>INSPIRACIÓN PARA TU <span class="azul">VIAJE</span></h3>
+		</div>
+		<div class="row">
+	        				<div class="col-md-4 col-sm-6 col-xs-12">
+  <div class="panel panel-default my_panel my_panel-inspira">
+    <div class="panel-body">
+      <div class="over-inspira">
+    		<h4>Experiencias Inolvidables en Ica</h4>
+    		<div>
+    			<p>Disfluta al maximo la adrenalina de las dunas de Huacachina el oasis escondido en medio del desierto de Ica</p>
+    			<a href="#!" class="btn btn-danger rojo">Leer Más</a>
+    		</div>
+      </div>
+      <img src="https://www.tgweb.spyrohost.com/paquetes/152752053914_small.jpg" alt="" class="img-responsive center-block"/>
+    </div>
+  </div>
+</div>	        				<div class="col-md-4 col-sm-6 col-xs-12">
+  <div class="panel panel-default my_panel my_panel-inspira">
+    <div class="panel-body">
+      <div class="over-inspira">
+    		<h4>Experiencias Inolvidables en Ica</h4>
+    		<div>
+    			<p>Disfluta al maximo la adrenalina de las dunas de Huacachina el oasis escondido en medio del desierto de Ica</p>
+    			<a href="#!" class="btn btn-danger rojo">Leer Más</a>
+    		</div>
+      </div>
+      <img src="https://www.tgweb.spyrohost.com/paquetes/152752053914_small.jpg" alt="" class="img-responsive center-block"/>
+    </div>
+  </div>
+</div>	        				<div class="col-md-4 col-sm-6 col-xs-12">
+  <div class="panel panel-default my_panel my_panel-inspira">
+    <div class="panel-body">
+      <div class="over-inspira">
+    		<h4>Experiencias Inolvidables en Ica</h4>
+    		<div>
+    			<p>Disfluta al maximo la adrenalina de las dunas de Huacachina el oasis escondido en medio del desierto de Ica</p>
+    			<a href="#!" class="btn btn-danger rojo">Leer Más</a>
+    		</div>
+      </div>
+      <img src="https://www.tgweb.spyrohost.com/paquetes/152752053914_small.jpg" alt="" class="img-responsive center-block"/>
+    </div>
+  </div>
+</div>	        				<div class="col-md-4 col-sm-6 col-xs-12">
+  <div class="panel panel-default my_panel my_panel-inspira">
+    <div class="panel-body">
+      <div class="over-inspira">
+    		<h4>Experiencias Inolvidables en Ica</h4>
+    		<div>
+    			<p>Disfluta al maximo la adrenalina de las dunas de Huacachina el oasis escondido en medio del desierto de Ica</p>
+    			<a href="#!" class="btn btn-danger rojo">Leer Más</a>
+    		</div>
+      </div>
+      <img src="https://www.tgweb.spyrohost.com/paquetes/152752053914_small.jpg" alt="" class="img-responsive center-block"/>
+    </div>
+  </div>
+</div>	        				<div class="col-md-4 col-sm-6 col-xs-12">
+  <div class="panel panel-default my_panel my_panel-inspira">
+    <div class="panel-body">
+      <div class="over-inspira">
+    		<h4>Experiencias Inolvidables en Ica</h4>
+    		<div>
+    			<p>Disfluta al maximo la adrenalina de las dunas de Huacachina el oasis escondido en medio del desierto de Ica</p>
+    			<a href="#!" class="btn btn-danger rojo">Leer Más</a>
+    		</div>
+      </div>
+      <img src="https://www.tgweb.spyrohost.com/paquetes/152752053914_small.jpg" alt="" class="img-responsive center-block"/>
+    </div>
+  </div>
+</div>	        				<div class="col-md-4 col-sm-6 col-xs-12">
+  <div class="panel panel-default my_panel my_panel-inspira">
+    <div class="panel-body">
+      <div class="over-inspira">
+    		<h4>Experiencias Inolvidables en Ica</h4>
+    		<div>
+    			<p>Disfluta al maximo la adrenalina de las dunas de Huacachina el oasis escondido en medio del desierto de Ica</p>
+    			<a href="#!" class="btn btn-danger rojo">Leer Más</a>
+    		</div>
+      </div>
+      <img src="https://www.tgweb.spyrohost.com/paquetes/152752053914_small.jpg" alt="" class="img-responsive center-block"/>
+    </div>
+  </div>
+</div>	        	    </div>
+	</div>
+</div>
+
+<div class="separate">
+	<hr size="2">
+	<div class="d-flex justify-content-center"><a href="#!"><h4><b>Ver Más <i class="fas fa-chevron-down azul"></i></b></h4></a></div>
+</div>        <footer>
+  <div class="fd-fluid padding-top-40 padding-bottom-40">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="block"> <img src="https://www.tgweb.spyrohost.com/img/logo.png" class="margin-bottom-15">
+            <h4 class="title">Redes sociales</h4>
+            <div class="redes-sociales">
+              <ul>
+                <li>
+                  <div class="rs"><i class="fab fa-facebook-f"></i></div>
+                </li>
+                <li>
+                  <div class="rs"><i class="fab fa-google-plus-g"></i></div>
+                </li>
+                <li>
+                  <div class="rs"><i class="fab fa-instagram"></i></div>
+                </li>
+                <li>
+                  <div class="rs"><i class="fab fa-pinterest-p"></i></div>
+                </li>
+                <li>
+                  <div class="rs"><i class="fab fa-twitter"></i></div>
+                </li>
+                <li>
+                  <div class="rs"><i class="fab fa-youtube"></i></div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="block">
+            <h4 class="title">Empresa</h4>
+            <div class="empresas">
+              <ul>
+                <li><a href="es/about-us"><i class="fas fa-angle-right"></i> <strong>Sobre nosotros</strong></a></li>
+                <li><a href="es/contact-us"><i class="fas fa-angle-right"></i> <strong>Contáctanos</strong></a></li>
+                <li><a href="es/terms-of-conditions"><i class="fas fa-angle-right"></i> <strong>Términos y
+                      condiciones</strong></a></li>
+                <li><a href="es/blog/"><i class="fas fa-angle-right"></i> Blog</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="block">
+            <h4 class="title">Enlaces de interés</h4>
+            <div class="logos">
+              <ul>
+                <li> <a href="https://www.mincetur.gob.pe/" target="_blank"> <img
+                      src="https://www.tgweb.spyrohost.com/img/logo/ministerio-de-comercio-exterior-turismo.jpg" width="300"> </a> </li>
+                <li style="display:inline-block;margin-right: 10px;"> <a href="https://www.promperu.gob.pe/"
+                    target="_blank"> <img src="https://www.tgweb.spyrohost.com/img/logo/cenfotur.png"> </a> </li>
+                <li style="display:inline-block;"> <a href="https://www.promperu.gob.pe/" target="_blank"> <img
+                      src="https://www.tgweb.spyrohost.com/img/logo/prom-peru.png?1"> </a> </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <h4 class="title">Método de pagos</h4>
+          <div class="block">
+            <div class="metodos-pagos">
+              <ul>
+                <li><img src="https://www.tgweb.spyrohost.com/img/metodos-pagos/visa.png"></li>
+                <li><img src="https://www.tgweb.spyrohost.com/img/metodos-pagos/cmr.png"></li>
+                <li><img src="https://www.tgweb.spyrohost.com/img/metodos-pagos/mc.png"></li>
+                <li><img src="https://www.tgweb.spyrohost.com/img/metodos-pagos/diners.png"></li>
+              </ul>
+            </div>
+            <div class="logos margin-top-10">
+              <ul>
+                <li> <a href="https://www.tripadvisor.com.pe/" target="_blank"> <img src="https://www.tgweb.spyrohost.com/img/logo/tripadvisor.png"
+                      width="300"> </a> </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="sub-footer">
+    <h4>2007-2018 | Política de privacidad. Todos los derechos reservados.</h4>
+  </div>
+</footer>        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="/assets/js/commons.js"></script>
+            </body>
+</html>

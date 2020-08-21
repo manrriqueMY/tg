@@ -1,0 +1,101 @@
+.carousel-inner{
+	max-height: 600px;
+}
+.carousel-inner img{
+	min-height: 400px;
+}
+.left.carousel-control,.right.carousel-control,.carousel-indicators{
+	z-index: 2;
+}
+.banner > .container-fluid{
+	padding-right: 0px;
+	padding-left: 0px;
+}
+.finding{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	z-index: 1;
+}
+
+.my_panel > .panel-body {
+  padding: 0px;
+}
+.my_panel > .panel-body > img {
+  width: 100%;
+  height: 100%;
+  /*max-height: 220px;*/
+}
+.my_panel > .panel-body > .over-inspira, .my_panel > .panel-body > .over-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  font-size: 3rem;
+  color: #ffffff;
+  text-shadow: 0px 0px 10px black;
+/*background: rgb(0,0,0);
+background: -webkit-linear-gradient(top left, rgba(0,0,0,0.5) 0%, rgba(255,255,255,0.1) 100%);
+background: -o-linear-gradient(top left, rgba(0,0,0,0.5) 0%, rgba(255,255,255,0.1) 100%);
+background: linear-gradient(to bottom right, rgba(0,0,0,0.5) 0%, rgba(255,255,255,0.1) 100%);*/
+}
+.my_panel > .panel-body > .over-card {
+  padding-left: 10px;
+  /*max-height: 250px;*/
+  height: 75%;
+  width: calc(100% - 30px);
+}
+.my_panel > .panel-body > .over-inspira {
+  padding-left: 10px;
+  /*max-height: 350px;*/
+  height: 90%;
+  width: calc(100% - 30px);
+}
+.my_panel > .panel-body > .over-inspira > div > p{
+	text-shadow: 0px 0px 10px black;
+}
+.my_panel-card img{
+	/*max-height: 270px !important;*/
+}
+.my_panel-inspira img{
+	/*max-height: 350px !important;*/
+}
+.my_panel > .panel-footer {
+  background-color: #ffffff;
+}
+.my_panel > .panel-footer > div{
+	margin: 10px 0;
+}
+
+.titulo span{
+	color: blue;
+	font-weight: bold;
+}
+.precio {
+	color: #7b7b7c;	
+}
+.price{
+	color: var(--color-primary);
+	font-weight: 900;
+	font-size: 3rem;
+	text-align: right;
+}
+
+.separate > div{
+	position: relative;
+	top: -40px;
+}
+
+.separate > div > a{
+	color: black;
+	padding: 0 20px;
+	background-color: #ffffff;
+}
+
+.separate > div > a:hover{
+	text-decoration-line: none;
+}
